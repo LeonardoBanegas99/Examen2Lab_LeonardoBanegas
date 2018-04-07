@@ -2,16 +2,18 @@ package examen2.leonardobanegas;
 
 import java.awt.Image;
 import java.util.Date;
+import javax.swing.Icon;
 
 public class Usuario {
+
     private String nombre;
     private String correo;
     private Date fecha;
     private String nombreusuario;
     private String contraseña;
-    private Image imagen;
+    private Icon imagen;
 
-    public Usuario(String nombre, String correo, Date fecha, String nombreusuario, String contraseña, Image imagen) {
+    public Usuario(String nombre, String correo, Date fecha, String nombreusuario, String contraseña, Icon imagen) {
         this.nombre = nombre;
         this.correo = correo;
         this.fecha = fecha;
@@ -63,17 +65,17 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 
-    public Image getImagen() {
+    public Icon getImagen() {
         return imagen;
     }
 
-    public void setImagen(Image imagen) {
+    public void setImagen(Icon imagen) {
         this.imagen = imagen;
     }
 
     @Override
     public String toString() {
-        return "Usuario{" + "nombre=" + nombre + ", correo=" + correo + ", fecha=" + fecha + ", nombreusuario=" + nombreusuario + ", contrase\u00f1a=" + contraseña + ", imagen=" + imagen + '}';
+        return "nombre=" + nombre;
     }
-    
+
 }

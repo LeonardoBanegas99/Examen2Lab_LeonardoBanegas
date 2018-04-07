@@ -6,10 +6,10 @@ import java.util.Date;
 public class Respuestas extends Publicacion {
 
     private ArrayList<Respuestas> respuestas = new ArrayList();
-    private Double calificaciongen;
+    private int calificaciongen;
     private ArrayList<Comentario> comentarios = new ArrayList();
 
-    public Respuestas(Double calificaciongen, String ID, String mensaje, Usuario autor, String publicidad, Date fecha) {
+    public Respuestas(int calificaciongen, String ID, String mensaje, Usuario autor, String publicidad, Date fecha) {
         super(ID, mensaje, autor, publicidad, fecha);
         this.calificaciongen = calificaciongen;
     }
@@ -25,11 +25,11 @@ public class Respuestas extends Publicacion {
         this.respuestas = respuestas;
     }
 
-    public Double getCalificaciongen() {
+    public int getCalificaciongen() {
         return calificaciongen;
     }
 
-    public void setCalificaciongen(Double calificaciongen) {
+    public void setCalificaciongen(int calificaciongen) {
         this.calificaciongen = calificaciongen;
     }
 
@@ -43,7 +43,7 @@ public class Respuestas extends Publicacion {
 
     @Override
     public String toString() {
-        return "Respuestas{" + "respuestas=" + respuestas + ", calificaciongen=" + calificaciongen + ", comentarios=" + comentarios + '}';
+        return super.toString() + ", calificaciongen=" + calificaciongen + ", comentarios=" + comentarios + '}';
     }
-    
+
 }

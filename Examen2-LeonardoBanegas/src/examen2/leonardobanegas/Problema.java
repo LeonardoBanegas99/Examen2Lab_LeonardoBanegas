@@ -3,7 +3,8 @@ package examen2.leonardobanegas;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Problema extends Publicacion{
+public class Problema extends Publicacion {
+
     private ArrayList<Respuestas> respuestas = new ArrayList();
     private String estado;
     private String categoria;
@@ -43,7 +44,7 @@ public class Problema extends Publicacion{
 
     @Override
     public String toString() {
-        return "Problema{" + "respuestas=" + respuestas + ", estado=" + estado + ", categoria=" + categoria + '}';
+        return super.toString() + ", categoria=" + categoria + '}';
     }
-    
+
 }

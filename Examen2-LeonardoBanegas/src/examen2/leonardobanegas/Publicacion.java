@@ -3,11 +3,13 @@ package examen2.leonardobanegas;
 import java.util.Date;
 
 public class Publicacion {
+
     private String ID;
     private String mensaje;
     private Usuario autor;
     private String publicidad;
     private Date fecha;
+    private boolean block = false;
 
     public Publicacion(String ID, String mensaje, Usuario autor, String publicidad, Date fecha) {
         this.ID = ID;
@@ -15,6 +17,14 @@ public class Publicacion {
         this.autor = autor;
         this.publicidad = publicidad;
         this.fecha = fecha;
+    }
+
+    public boolean isBlock() {
+        return block;
+    }
+
+    public void setBlock(boolean block) {
+        this.block = block;
     }
 
     public Publicacion() {
@@ -62,7 +72,7 @@ public class Publicacion {
 
     @Override
     public String toString() {
-        return "Publicacion{" + "ID=" + ID + ", mensaje=" + mensaje + ", autor=" + autor + ", publicidad=" + publicidad + ", fecha=" + fecha + '}';
+        return "Autor=" + autor + ", Publicidad Tipo =" + publicidad + fecha;
     }
-    
+
 }

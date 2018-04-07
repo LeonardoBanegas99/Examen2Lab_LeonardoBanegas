@@ -31,7 +31,7 @@ public class Solicitudes {
 
     @Override
     public String toString() {
-        return "Solicitudes{" + "emisor=" + emisor + ", receptor=" + receptor + '}';
+        return "" + emisor;
     }
-    
+
 }

@@ -3,13 +3,14 @@ package examen2.leonardobanegas;
 import java.awt.Image;
 import java.util.ArrayList;
 import java.util.Date;
+import javax.swing.Icon;
 
 public class UsuarioAdmin extends Usuario {
 
     private ArrayList<Publicacion> publicacionesbloqueadas = new ArrayList();
     private ArrayList<UsuarioNormal> usuariosnormalesblock = new ArrayList();
 
-    public UsuarioAdmin(String nombre, String correo, Date fecha, String nombreusuario, String contraseña, Image imagen) {
+    public UsuarioAdmin(String nombre, String correo, Date fecha, String nombreusuario, String contraseña, Icon imagen) {
         super(nombre, correo, fecha, nombreusuario, contraseña, imagen);
     }
 
